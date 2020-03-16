@@ -18,7 +18,7 @@ def groupArrayElements(arrayIn, numberOfChunksDesired):
 		arrayIn = arrayIn[chunkSize:]
 	# add any remaining array entries that are less than a standard chunk in length
 	retval.append(arrayIn)
-	# add None values for chunks beyond the length of the original array
+	# add None values for chunks beyond the length of the original array 
 	if len(retval) < numberOfChunksDesired:
 		fillerLength = numberOfChunksDesired - len(retval)
 		fillerArray = [None] * fillerLength
